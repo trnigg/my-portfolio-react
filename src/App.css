@@ -1,3 +1,19 @@
 @import 'open-props/normalize';
 
 @import 'open-props/buttons';
+
+/* HEADER Styles */
+
+header {
+	background-color: var(--surface-3);
+	padding: var(--size-fluid-1) var(--size-fluid-2);
+	box-shadow: var(--shadow-4);
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+h1 {
+	font-size: var(--font-size-fluid-3);
+	/* text-align: center; */
+}

@@ -1,0 +1,69 @@
+@import 'open-props/normalize';
+
+/* @import 'open-props/buttons'; */
+
+.section-content-container {
+	margin: 0 auto;
+	/* TO DO - MARGINS with Var */
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: justify;
+}
+
+/* About Me Section */
+.intro {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+#p-start,
+#p-end {
+	font-family: var(--font-mono);
+}
+
+#p-start {
+	text-align: start;
+}
+
+#p-center {
+	text-align: center;
+	/* TO DO - MARGINS with Var */
+	margin: 1rem 0;
+}
+
+#p-end {
+	text-align: end;
+}
+
+#console {
+	color: var(--pink-6);
+}
+
+#log {
+	color: var(--red-9);
+}
+
+.future-code {
+	color: var(--blue-7);
+}
+
+div .headshot {
+	/* TO DO - MARGINS with Var */
+	margin: 2.4rem 0;
+}
+
+#little-me {
+	width: 100%;
+	/* TO DO - Height with Var */
+
+	max-height: 25rem;
+	object-fit: cover;
+	/* TO DO - MARGINS with Var */
+
+	margin: 0 auto;
+	border-radius: var(--radius-blob-4);
+	box-shadow: var(--shadow-4);
+}

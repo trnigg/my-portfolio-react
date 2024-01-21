@@ -1,10 +1,13 @@
+import Navbar from './Navbar';
+
 function Header() {
-	const title = 'Placeholder Title';
+	const title = 'Welcome!';
 
 	return (
 		<header>
 			<div className="header-container">
-				<h1>Welcome!</h1>
+				<h1>{title}</h1>
+				<Navbar />
 			</div>
 		</header>
 	);

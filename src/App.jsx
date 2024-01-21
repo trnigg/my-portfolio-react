@@ -9,9 +9,13 @@ import Footer from './components/Footer';
 function App() {
 	return (
 		<>
+			{/* <div className="app"> */}
 			<Header />
-			<Outlet />
+			<div className="page-container">
+				<Outlet />
+			</div>
 			<Footer />
+			{/* </div> */}
 		</>
 	);
 }

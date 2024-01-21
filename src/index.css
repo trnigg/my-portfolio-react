@@ -9,4 +9,17 @@
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-text-size-adjust: 100%;
 	font-family: var(--font-sans);
+	--brand: var(--blue-6);
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--brand: var(--blue-10);
+	}
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 }

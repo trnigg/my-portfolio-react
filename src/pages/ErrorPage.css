@@ -1,0 +1,25 @@
+@import 'open-props/normalize';
+
+/* Center the error page and text on x,y with margin on container inline for small screens, and margin bottom on elements */
+
+.error-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin-inline: var(--size-fluid-2);
+}
+
+.error-container h1 {
+	font-size: var(--font-size-fluid-3);
+	color: var(--red-8);
+	margin-bottom: var(--size-fluid-2);
+	text-align: center;
+}
+
+.error-container p {
+	font-size: var(--font-size-fluid-1);
+	margin-bottom: var(--size-fluid-1);
+	text-align: center;
+}

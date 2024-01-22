@@ -1,0 +1,81 @@
+@import 'open-props/normalize';
+
+.project-featured,
+.project-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.project-featured .project,
+.project-container .project {
+	/* Set basis to 50% (for 2 to a line) minus fluid-1 (roughtly half of fluid-2 so not to double gap */
+	flex-basis: calc(
+		50% - var(--size-fluid-1)
+	); /* This will make two projects per line */
+	/* Position as relative for the overlay to be absolute */
+	position: relative;
+	margin-bottom: var(--size-fluid-2);
+}
+
+.project-featured .project {
+	flex-basis: 100%; /* full width */
+}
+
+.project img {
+	border-radius: var(--radius-3);
+	box-shadow: var(--shadow-3);
+}
+
+.project-overlay {
+	/* Position as absolute to overlay relative in cointaner */
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	border-radius: var(--radius-3);
+	box-shadow: var(--shadow-4);
+}
+
+.project:hover .project-overlay {
+	opacity: 1;
+}
+
+.project-description {
+	margin-bottom: var(--size-fluid-2);
+}
+
+.project-links {
+	display: flex;
+	justify-content: center;
+	gap: var(--size-fluid-3);
+	width: 100%;
+}
+
+.project-links a svg {
+	width: var(--size-fluid-3);
+	height: var(--size-fluid-3);
+	transition: 0.3s ease;
+}
+
+.project-links a svg:hover {
+	/* transform to increase size rather than using fixed sizes, so they don't move. */
+	transform: scale(1.5);
+	transition: 0.3s ease;
+}
+
+@media (max-width: 700px) {
+	.project-featured .project,
+	.project-container .project {
+		flex-basis: 100%;
+	}
+}

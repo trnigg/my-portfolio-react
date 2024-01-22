@@ -1,11 +1,11 @@
 function Footer() {
-  const content = "Made with love";
+	const content = 'Made with love';
 
-  return (
-    <div>
-      <p>{content}</p>
-    </div>
-  );
+	return (
+		<footer>
+			<p>{content}</p>
+		</footer>
+	);
 }
 
 export default Footer;

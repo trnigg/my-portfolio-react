@@ -2,18 +2,93 @@
 
 @import 'open-props/buttons';
 
+/* GLOBAL STYLES */
+
 /* HEADER Styles */
 
 header {
 	background-color: var(--surface-3);
-	padding: var(--size-fluid-1) var(--size-fluid-2);
+	padding: var(--size-fluid-2) var(--size-fluid-3);
+	margin-bottom: var(--size-fluid-4);
 	box-shadow: var(--shadow-4);
 	position: sticky;
 	top: 0;
 	z-index: 1;
 }
 
+.header-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav {
+	display: block;
+}
+
+menu {
+	display: flex;
+	justify-content: space-around;
+	font-weight: bold;
+	gap: var(--size-8);
+	align-items: baseline;
+}
+
+li {
+	list-style: none;
+	padding: 0;
+	font-size: var(--font-size-fluid-0);
+	transition: 0.3s ease;
+}
+
+li:hover {
+	transform: scale(1.5);
+	transition: 0.3s ease;
+}
+
+/* For Navbar with state */
+.active-link {
+	transform: scale(1.5);
+	/* transition: font-size 0.3s ease; */
+}
+
 h1 {
 	font-size: var(--font-size-fluid-3);
 	/* text-align: center; */
+	color: var(--brand);
+}
+
+h2 {
+	font-size: var(--font-size-fluid-2);
+	/* text-align: center; */
+	color: var(--brand);
+	margin-bottom: var(--size-fluid-2);
+}
+
+/* https://www.youtube.com/watch?v=szPNMKZazzQ&t=306s */
+.page-container {
+	display: flex;
+	flex-direction: column;
+	flex: 1 0 auto;
+	width: min(100% - var(--size-fluid-4), 50rem);
+	margin-inline: auto;
+	/* justify-content: center; */
+	align-items: center;
+}
+
+footer {
+	flex-shrink: 0;
+}
+
+@media (max-width: 700px) {
+	.header-container {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.header-container h1 {
+		margin-right: 0;
+	}
 }

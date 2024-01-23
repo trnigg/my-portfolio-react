@@ -13,7 +13,7 @@
 
 .error-container h1 {
 	font-size: var(--font-size-fluid-3);
-	color: var(--red-8);
+	color: var(--error);
 	margin-bottom: var(--size-fluid-2);
 	text-align: center;
 }

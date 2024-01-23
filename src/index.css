@@ -10,6 +10,8 @@
 	-webkit-text-size-adjust: 100%;
 	font-family: var(--font-sans);
 	--brand: var(--blue-6);
+	--error: var(--red-8);
+	--success: var(--green-8);
 }
 
 @media (prefers-color-scheme: light) {

@@ -23,8 +23,10 @@
 }
 
 .project img {
-	border-radius: var(--radius-3);
+	border-radius: var(--radius-4);
 	box-shadow: var(--shadow-3);
+	aspect-ratio: var(--ratio-widescreen);
+	object-fit: cover;
 }
 
 .project-overlay {
@@ -42,7 +44,7 @@
 	align-items: center;
 	opacity: 0;
 	transition: opacity 0.3s ease;
-	border-radius: var(--radius-3);
+	border-radius: var(--radius-4);
 	box-shadow: var(--shadow-4);
 }
 
@@ -77,5 +79,12 @@
 	.project-featured .project,
 	.project-container .project {
 		flex-basis: 100%;
+	}
+
+	.project img {
+		aspect-ratio: var(--ratio-ultrawide);
+		border-radius: var(
+			--radius-3
+		); /* smaller radius for smaller images - down from 4 */
 	}
 }

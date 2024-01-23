@@ -57,6 +57,7 @@ h1 {
 	font-size: var(--font-size-fluid-3);
 	/* text-align: center; */
 	color: var(--brand);
+	font-weight: var(--font-weight-7);
 }
 
 h2 {
@@ -64,6 +65,16 @@ h2 {
 	/* text-align: center; */
 	color: var(--brand);
 	margin-bottom: var(--size-fluid-2);
+	font-weight: var(--font-weight-6);
+}
+
+h3,
+h4 {
+	font-weight: var(--font-weight-5);
+}
+
+a {
+	color: var(--brand);
 }
 
 /* https://www.youtube.com/watch?v=szPNMKZazzQ&t=306s */

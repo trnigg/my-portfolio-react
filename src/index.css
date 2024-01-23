@@ -9,7 +9,7 @@
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-text-size-adjust: 100%;
 	font-family: var(--font-sans);
-	--brand: var(--blue-6);
+	--brand: var(--blue-3);
 	--error: var(--red-8);
 	--success: var(--green-8);
 }

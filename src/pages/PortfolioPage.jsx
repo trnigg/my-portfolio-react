@@ -50,7 +50,7 @@ export default function PortfolioPage() {
 
 	return (
 		<>
-			<h2>Portfolio</h2>
+			<h2>My Portfolio</h2>
 			<div className="project-featured">
 				<Project project={projects[0]} />
 			</div>

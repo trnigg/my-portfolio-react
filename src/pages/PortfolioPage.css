@@ -7,15 +7,17 @@
 	justify-content: space-between;
 }
 
-.project-featured .project,
+.project {
+	/* Position as relative for the overlay to be absolute */
+	position: relative;
+	margin-bottom: var(--size-fluid-2);
+}
+
 .project-container .project {
 	/* Set basis to 50% (for 2 to a line) minus fluid-1 (roughtly half of fluid-2 so not to double gap */
 	flex-basis: calc(
 		50% - var(--size-fluid-1)
 	); /* This will make two projects per line */
-	/* Position as relative for the overlay to be absolute */
-	position: relative;
-	margin-bottom: var(--size-fluid-2);
 }
 
 .project-featured .project {
@@ -36,8 +38,7 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(0, 0, 0, 0.5);
-	color: white;
+	background: var(--surface-2);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

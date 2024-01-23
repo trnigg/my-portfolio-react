@@ -1,0 +1,45 @@
+@import 'open-props/normalize';
+@import 'open-props/buttons';
+
+.instructions {
+	text-align: center;
+	font-size: var(--font-size-fluid-1);
+	margin-bottom: var(--size-fluid-2);
+}
+
+/* Change font colour depending on error or success: */
+.error {
+	color: var(--error);
+}
+
+.success {
+	color: var(--success);
+}
+
+span {
+	color: var(--gray-6);
+	font-size: var(--font-size-fluid-0);
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+label {
+	font-size: var(--font-size-fluid-0);
+	text-align: center;
+	margin-bottom: var(--size-fluid-1);
+	font-weight: var(--font-weight-6);
+}
+
+input,
+textarea {
+	width: 100%;
+	margin-bottom: var(--size-fluid-2);
+}
+
+button {
+	align-self: center;
+}

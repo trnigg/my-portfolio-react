@@ -1,6 +1,5 @@
-/* @import 'open-props/normalize'; */
-/* @import 'https://unpkg.com/open-props/normalize.min.css'; */
-/* @import 'open-props/buttons'; */
+@import 'open-props/normalize';
+@import 'open-props/buttons';
 
 :root {
 	font-synthesis: none;

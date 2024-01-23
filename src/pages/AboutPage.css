@@ -1,6 +1,5 @@
 @import 'open-props/normalize';
-
-/* @import 'open-props/buttons'; */
+@import 'open-props/buttons';
 
 .section-content-container {
 	margin: 0 auto;

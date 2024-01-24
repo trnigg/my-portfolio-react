@@ -10,13 +10,16 @@ export default function Project({ project }) {
 				<h4 className="project-title">{project.title}</h4>
 				<p className="project-description">{project.description}</p>
 				<div className="project-links">
-					<a
-						href={project.deployedLink}
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<ExternalLink />
-					</a>
+					{/* conditionally render link to deployed page only if it exists */}
+					{project.deployedLink !== 'N/A' && (
+						<a
+							href={project.deployedLink}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<ExternalLink />
+						</a>
+					)}
 					<a
 						href={project.gitHubLink}
 						target="_blank"

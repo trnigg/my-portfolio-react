@@ -30,6 +30,7 @@
 	box-shadow: var(--shadow-3);
 	aspect-ratio: var(--ratio-widescreen);
 	object-fit: cover;
+	object-position: top left;
 }
 
 .project-overlay {
@@ -48,6 +49,11 @@
 	transition: opacity 0.3s ease;
 	border-radius: var(--radius-4);
 	box-shadow: var(--shadow-4);
+	text-align: center;
+}
+
+.project-title {
+	margin-bottom: var(--size-fluid-1);
 }
 
 .project:hover .project-overlay {
@@ -88,5 +94,10 @@
 		border-radius: var(
 			--radius-3
 		); /* smaller radius for smaller images - down from 4 */
+	}
+
+	/* Hide project description on mobile */
+	.project-description {
+		display: none;
 	}
 }

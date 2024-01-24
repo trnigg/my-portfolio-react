@@ -5,14 +5,14 @@ export default function AboutPage() {
 	return (
 		<>
 			<h2>About Me</h2>
-			<div className="section-content-container" id="about-content">
+			<div className="about-container">
 				<div className="intro">
 					<p id="p-start">
 						<span id="console">console</span>
 						<span id="log">.log</span>
 						{'("Hello World! I am")'};
 					</p>
-					<h3 id="p-center">Tim Nigg</h3>
+					<h3 id="p-center">Tim N</h3>
 					<p id="p-end">
 						{'<'}
 						<span className="future-code">future</span>

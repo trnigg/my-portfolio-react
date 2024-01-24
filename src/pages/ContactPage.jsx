@@ -69,12 +69,12 @@ export default function ContactPage() {
 				Please complete the form below, or reach out on one of my socials.{' '}
 				<br />
 				<span>
-					(Please note, the form currently does not have any function and is
-					purely for prototyping purposes.)
+					Please note, the form currently does not have any function and is
+					purely for prototyping purposes.
 				</span>
 			</p>
 			<form onSubmit={handleSubmit}>
-				<label htmlFor="name">Name</label>
+				<label htmlFor="name">Name:</label>
 				<input
 					id="name"
 					type="text"
@@ -88,7 +88,7 @@ export default function ContactPage() {
 					required
 					aria-required="true"
 				/>
-				<label htmlFor="email">Email</label>
+				<label htmlFor="email">Email:</label>
 				<input
 					id="email"
 					type="email"
@@ -102,7 +102,7 @@ export default function ContactPage() {
 					required
 					aria-required="true"
 				/>
-				<label htmlFor="message">Message</label>
+				<label htmlFor="message">Message:</label>
 				<textarea
 					id="message"
 					value={message}

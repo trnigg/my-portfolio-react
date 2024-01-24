@@ -1,5 +1,4 @@
 @import 'open-props/normalize';
-
 @import 'open-props/buttons';
 
 /* GLOBAL STYLES */
@@ -35,14 +34,14 @@ menu {
 	align-items: baseline;
 }
 
-li {
+menu li {
 	list-style: none;
 	padding: 0;
 	font-size: var(--font-size-fluid-0);
 	transition: 0.3s ease;
 }
 
-li:hover {
+menu li:hover {
 	transform: scale(1.5);
 	transition: 0.3s ease;
 }
@@ -55,15 +54,29 @@ li:hover {
 
 h1 {
 	font-size: var(--font-size-fluid-3);
-	/* text-align: center; */
 	color: var(--brand);
+	font-weight: var(--font-weight-7);
 }
 
 h2 {
 	font-size: var(--font-size-fluid-2);
-	/* text-align: center; */
 	color: var(--brand);
 	margin-bottom: var(--size-fluid-2);
+	font-weight: var(--font-weight-6);
+}
+
+h3 {
+	font-size: var(--font-size-fluid-1);
+	font-weight: var(--font-weight-5);
+}
+
+h3,
+h4 {
+	font-weight: var(--font-weight-5);
+}
+
+a {
+	color: var(--brand);
 }
 
 /* https://www.youtube.com/watch?v=szPNMKZazzQ&t=306s */

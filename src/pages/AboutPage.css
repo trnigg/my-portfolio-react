@@ -1,8 +1,7 @@
 @import 'open-props/normalize';
+@import 'open-props/buttons';
 
-/* @import 'open-props/buttons'; */
-
-.section-content-container {
+.about-container {
 	margin: 0 auto;
 	/* TO DO - MARGINS with Var */
 
@@ -29,9 +28,8 @@
 }
 
 #p-center {
-	text-align: center;
-	/* TO DO - MARGINS with Var */
-	margin: 1rem 0;
+	/* no need to align center, handled by container*/
+	margin: var(--size-fluid-2) auto;
 }
 
 #p-end {

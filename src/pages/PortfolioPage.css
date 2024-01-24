@@ -57,6 +57,12 @@
 }
 
 .project:hover .project-overlay {
+	opacity: 0.9;
+}
+
+.project:hover .project-title,
+.project-description,
+.project-links {
 	opacity: 1;
 }
 

@@ -1,6 +1,7 @@
 // This is a static page checking if it works, for now
 import './ResumePage.css';
 import { Check, Download } from 'react-feather';
+import blankResume from '../assets/docs/carte-blanche.pdf';
 
 export default function ResumePage() {
 	const frontendSkills = [
@@ -23,11 +24,11 @@ export default function ResumePage() {
 	return (
 		<>
 			<h2>My Résumé</h2>
-			<a href="/path/to/your/resume.pdf" download className="download-link">
+			<a href={blankResume} download className="download-link">
 				Download my resume <Download />
 			</a>
 			<div className="skills-container">
-				<h3>Back End Skills</h3>
+				<h3>Front End Proficiencies</h3>
 
 				<ul className="skills-list">
 					{frontendSkills.map((skill, index) => (
@@ -36,7 +37,7 @@ export default function ResumePage() {
 						</li>
 					))}
 				</ul>
-				<h3>Front End Skills</h3>
+				<h3>Back End Proficiencies</h3>
 				<ul className="skills-list">
 					{backendSkills.map((skill, index) => (
 						<li key={index}>

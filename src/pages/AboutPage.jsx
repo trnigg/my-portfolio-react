@@ -5,7 +5,7 @@ export default function AboutPage() {
 	return (
 		<>
 			<h2>About Me</h2>
-			<div className="section-content-container" id="about-content">
+			<div className="about-container">
 				<div className="intro">
 					<p id="p-start">
 						<span id="console">console</span>

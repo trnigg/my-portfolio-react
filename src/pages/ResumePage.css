@@ -1,0 +1,57 @@
+@import 'open-props/normalize';
+@import 'open-props/buttons';
+
+/* Makes content on download link incl SVG inl-line */
+.download-link {
+	display: flex;
+	align-items: center;
+}
+
+.download-link svg {
+	margin-left: var(--size-fluid-1);
+	width: var(--size-fluid-3);
+	height: var(--size-fluid-3);
+	transition: 0.3s ease;
+}
+
+/* Sets hover state for SVG using the parent class */
+.download-link:hover svg {
+	transform: scale(1.5);
+	transition: 0.3s ease;
+}
+
+/* Centers the content of the page */
+.skills-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0;
+	width: 100%;
+}
+
+.skills-container h3 {
+	margin-block: var(--size-fluid-2);
+	font-size: var(--font-size-fluid-1);
+}
+
+.skills-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0;
+}
+
+.skills-list li {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	padding: 0;
+	margin-bottom: var(--size-fluid-1);
+	/* negative margin to compensate for svg width and padding-right */
+	margin-left: calc(-1 * (24px + var(--size-fluid-1)));
+	font-size: var(--font-size-fluid-0);
+}
+
+li > svg {
+	margin-right: var(--size-fluid-1);
+}

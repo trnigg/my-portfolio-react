@@ -102,6 +102,10 @@
 		); /* smaller radius for smaller images - down from 4 */
 	}
 
+	.project-overlay {
+		border-radius: var(--radius-3);
+	}
+
 	/* Hide project description on mobile */
 	.project-description {
 		display: none;

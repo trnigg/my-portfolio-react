@@ -100,8 +100,8 @@ footer {
 	overflow: hidden;
 }
 footer a svg {
-	width: var(--size-fluid-3);
-	height: var(--size-fluid-3);
+	width: var(--size-fluid-2);
+	height: var(--size-fluid-2);
 	transition: 0.3s ease;
 	margin-block: var(--size-fluid-3);
 }
@@ -125,10 +125,5 @@ footer a svg:hover {
 
 	footer {
 		gap: var(--size-fluid-5);
-	}
-
-	footer a svg {
-		width: var(--size-fluid-2);
-		height: var(--size-fluid-2);
 	}
 }
